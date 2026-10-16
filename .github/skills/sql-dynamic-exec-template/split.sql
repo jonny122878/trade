@@ -1,0 +1,215 @@
+DECLARE @MERCHANT_NO VARCHAR(20) = @EXEC_MERCHANT_NO
+DECLARE @DATE_FROM VARCHAR(8) = CONVERT(VARCHAR(6),DATEADD(M,-1,@EXEC_CPT_DATE),112)+'01'
+DECLARE @DATE_TO VARCHAR(8) = CONVERT(VARCHAR(8),DATEADD(D,-1,DATEADD(M,1,@DATE_FROM)),112)
+DECLARE @MERCH_SCHEMAID VARCHAR(10)
+DECLARE @SQL_String VARCHAR(MAX)
+DECLARE @SQL_String_TARGET_STORE VARCHAR(MAX)
+
+
+SELECT @MERCH_SCHEMAID = MERCH_SCHEMAID
+FROM itrans.dbo.GM_MERCHANT
+WHERE MERCHANT_NO = @MERCHANT_NO
+
+
+IF (@MERCHANT_NO='4326600A') BEGIN
+SET @SQL_String_TARGET_STORE =
+'
+SELECT G.INPUT_VALUE [STORE_NO],G.OUTPUT_VALUE [STORE_NO_LICENSE],G.OUTPUT_DESC [STORE_NO_REPLACE],CODE_TYPE AS MERCHANT_NO
+INTO #TARGET_STORE
+FROM itrans.dbo.GM_CODE_MAPPING G
+WHERE G.MAPPING_GROUP=''Tycg''
+	AND G.CODE_TYPE='''+@MERCHANT_NO+'''
+	AND INPUT_VALUE NOT IN (
+	''000952'',
+	''010952'',
+	''020952'',
+	''005990'',
+	''015990'',
+	''025990'',
+	''009512'',
+	''019512'',
+	''029512'',
+	''095120'',
+	''019562'',
+	''029562'',
+	''095162''
+	)
+	
+'
+END ELSE BEGIN--==================
+SET @SQL_String_TARGET_STORE =
+'
+SELECT B.STORE_NO
+	,CASE WHEN G.OUTPUT_VALUE IS NULL
+		THEN B.STORE_NO
+		ELSE G.OUTPUT_VALUE
+	 END [STORE_NO_LICENSE]
+	,'''' [STORE_NO_REPLACE]
+	,B.MERCHANT_NO
+INTO #TARGET_STORE
+FROM itrans.dbo.GM_CODE_MAPPING G
+RIGHT JOIN itrans.'+@MERCH_SCHEMAID+'.BM_STORE_M B
+	ON G.MAPPING_GROUP=''Tycg''
+	AND G.CODE_TYPE=B.MERCHANT_NO
+	AND G.INPUT_VALUE=B.STORE_NO
+	WHERE B.LINE_TYPE=''14''
+'
+END--=============================
+
+SET @SQL_String =
+'
+SELECT '''' [橫列名]
+	,STORE_NO [路線IC代碼]
+	,STORE_NO_LICENSE [路線編號]
+	,CASE
+		WHEN TICKET_TYPE_Tycg=''04'' THEN ''敬老卡''--優待等同報表敬老
+		ELSE ''一般卡''
+	 END [票種名稱]
+	,SUM(TRANS_CNT) [刷卡量(次)]
+	,NULL [應收總金額(元)]
+	,SUM(TRANS_AMT) [實際營收金額(元)]
+	,SUM(FREE_AMT_TYPT_1_2) [基本里程補貼金額(元)]
+	,0 [票價上限補貼金額(元)]
+	,NULL [學生卡25折補助(元)]
+	,0 [社福補助(點數]
+	,SUM(TMC_TRANSFER_AMT) [捷運轉乘優惠補貼金額(元)]
+	,0 [A22-A23區間優惠補貼金額(元)]
+	,SUM(TRA_TRANSFER_AMT) [國道及台鐵轉乘市區客運優惠金額(元)]
+	,SUM(OTHER_ALLOWANCE_AMT) [其它補貼(元)]
+	,SUM(LEGAL_ALLOWANCE_AMT) [法定差額補貼(元)]
+INTO #TargetTable
+FROM (
+	SELECT I.MERCHANT_NO
+		,CASE WHEN I.STORE_NO_REPLACE='''' THEN I.STORE_NO ELSE I.STORE_NO_REPLACE END [STORE_NO]
+		,I.STORE_NO_LICENSE
+		,CASE WHEN I.TICKET_TYPE=''04''
+			THEN ''04''
+			ELSE ''01''
+		 END [TICKET_TYPE_Tycg]
+		,1 [TRANS_CNT]
+		,I.TRANS_AMT+O.TRANS_AMT [TRANS_AMT]
+		,CONVERT(NUMERIC,I.FREE_AMT_TYPT1)+CONVERT(NUMERIC,O.FREE_AMT_TYPT1)+CONVERT(NUMERIC,I.FREE_AMT_TYPT2)+CONVERT(NUMERIC,O.FREE_AMT_TYPT2) [FREE_AMT_TYPT_1_2]
+		,CASE WHEN I.TRANSFER_GROUP_CODE1=''0B''
+			THEN I.TRANS_DISC_AMT+O.TRANS_DISC_AMT
+			ELSE 0
+		 END [TMC_TRANSFER_AMT]
+		,CASE WHEN I.TRANSFER_GROUP_CODE1 IN (''08'',''13'')
+			THEN I.TRANS_DISC_AMT+O.TRANS_DISC_AMT
+			ELSE 0
+		 END [TRA_TRANSFER_AMT]
+		,CASE WHEN I.TRANSFER_GROUP_CODE1 IN (''0B'',''08'',''13'')
+			THEN I.TRANS_DIFF_AMT+O.TRANS_DIFF_AMT
+			ELSE I.TRANS_DIFF_AMT+O.TRANS_DIFF_AMT+I.TRANS_DISC_AMT+O.TRANS_DISC_AMT
+		 END [OTHER_ALLOWANCE_AMT]
+		,CASE
+			WHEN I.TICKET_TYPE=''04'' AND I.TRANS_AMT+O.TRANS_AMT<=9 THEN 9
+			WHEN I.TICKET_TYPE=''04'' AND I.TRANS_AMT+O.TRANS_AMT>9 THEN ROUND(I.TRANS_AMT+O.TRANS_AMT-0.5,2)
+			ELSE 0
+		 END [LEGAL_ALLOWANCE_AMT]
+	FROM (
+		SELECT D.MERCHANT_NO,D.STORE_NO,ICC_NO,TICKET_TYPE,TRANS_DATE_TXLOG,TRANS_AMT,TRANS_DISC_AMT
+			,ISNULL(TRANS_DIFF_AMT,0) AS [TRANS_DIFF_AMT]
+			,FREE_AMT_TYPT1		--基本票價優惠（上車）
+			,FREE_AMT_TYPT2		--搭乘優惠（業者）
+			,TRANSFER_GROUP_CODE1,ICC_TSN
+			,B.STORE_NO_LICENSE
+			,B.STORE_NO_REPLACE
+			,Recordid									--離線交易記錄序號(上車序號)
+		FROM itrans.dbo.ICP_TM_SETTLE_DATA_D_VIEW D
+		INNER JOIN #TARGET_STORE B
+			ON D.STORE_NO = B.STORE_NO
+			AND BUSINESS_DATE BETWEEN '+@DATE_FROM+' AND '+@DATE_TO+'
+			AND TR_KIND IN (''00'',''01'')
+			AND D.MERCHANT_NO=B.MERCHANT_NO
+	) I
+	INNER JOIN (
+		SELECT D.MERCHANT_NO,D.STORE_NO,ICC_NO,TICKET_TYPE,TRANS_DATE_TXLOG,TRANS_AMT,TRANS_DISC_AMT
+			,ISNULL(TRANS_DIFF_AMT,0) AS [TRANS_DIFF_AMT]
+			,FREE_AMT_TYPT1		--基本票價優惠（上車）
+			,FREE_AMT_TYPT2		--搭乘優惠（業者）
+			,TRANSFER_GROUP_CODE1,ICC_TSN
+			,LAST_TRANSFER_DATETIME
+			,recordsn									--離線原始交易記錄序號 (下車的前次交易序號 )
+		FROM itrans.dbo.ICP_TM_SETTLE_DATA_D_VIEW D
+		INNER JOIN #TARGET_STORE B
+			ON D.STORE_NO = B.STORE_NO
+			AND BUSINESS_DATE BETWEEN '+@DATE_FROM+' AND '+@DATE_TO+'
+			AND TR_KIND IN (''10'',''11'')
+			AND D.MERCHANT_NO=B.MERCHANT_NO
+	) O
+		ON I.ICC_NO = O.ICC_NO
+		AND I.TRANS_DATE_TXLOG = O.LAST_TRANSFER_DATETIME
+		AND I.STORE_NO = O.STORE_NO
+		--AND CONVERT(NUMERIC,I.ICC_TSN)+1 = CONVERT(NUMERIC,O.ICC_TSN)
+		AND I.Recordid =  O.recordsn	--recordId=離線交易記錄序號(上車序號) ，recordsn=離線原始交易記錄序號 (下車的前次交易序號 )
+) D
+GROUP BY STORE_NO,STORE_NO_LICENSE,TICKET_TYPE_Tycg
+
+DECLARE @TABLE_TICKET TABLE (TICKET_SERIAL CHAR(1), TICKET_NAME VARCHAR(15))
+INSERT @TABLE_TICKET
+VALUES
+ (''1'',''一般卡'')
+,(''2'',''學生卡'')
+,(''3'',''敬老卡'')
+,(''4'',''愛心卡'')
+,(''5'',''愛陪卡(有陪)'')
+,(''6'',''愛陪卡(未陪)'')
+
+SELECT ''SubTotal'' [橫列名]
+	,[路線IC代碼],[路線編號]
+	,''小計'' [票種名稱]
+	,SUM([刷卡量(次)]) [刷卡量(次)]
+	,NULL [應收總金額(元)]
+	,SUM([實際營收金額(元)]) [實際營收金額(元)]
+	,SUM([基本里程補貼金額(元)]) [基本里程補貼金額(元)]
+	,SUM([票價上限補貼金額(元)]) [票價上限補貼金額(元)]
+	,NULL [學生卡25折補助(元)]
+	,SUM([社福補助(點數]) [社福補助(點數]
+	,SUM([捷運轉乘優惠補貼金額(元)]) [捷運轉乘優惠補貼金額(元)]
+	,SUM([A22-A23區間優惠補貼金額(元)]) [A22-A23區間優惠補貼金額(元)]
+	,SUM([國道及台鐵轉乘市區客運優惠金額(元)]) [國道及台鐵轉乘市區客運優惠金額(元)]
+	,SUM([其它補貼(元)]) [其它補貼(元)]
+	,SUM([法定差額補貼(元)]) [法定差額補貼(元)]
+INTO #Table_SubTotal
+FROM #TargetTable
+GROUP BY [路線IC代碼],[路線編號]
+
+SELECT *
+FROM (
+	SELECT *
+	FROM #Table_SubTotal
+	UNION ALL
+	SELECT T.TICKET_SERIAL [橫列名]
+		,T.[路線IC代碼]
+		,T.[路線編號]
+		,T.[票種名稱]
+		,[刷卡量(次)]
+		,[應收總金額(元)]
+		,[實際營收金額(元)]
+		,[基本里程補貼金額(元)]
+		,[票價上限補貼金額(元)]
+		,[學生卡25折補助(元)]
+		,[社福補助(點數]
+		,[捷運轉乘優惠補貼金額(元)]
+		,[A22-A23區間優惠補貼金額(元)]
+		,[國道及台鐵轉乘市區客運優惠金額(元)]
+		,[其它補貼(元)]
+		,[法定差額補貼(元)]
+	FROM #TargetTable D
+	RIGHT JOIN (
+		SELECT S.[路線IC代碼],S.[路線編號],T.TICKET_SERIAL,T.TICKET_NAME [票種名稱]
+		FROM #Table_SubTotal S
+		CROSS JOIN @TABLE_TICKET T
+	) T
+		ON D.[路線IC代碼] = T.[路線IC代碼]
+		AND D.[路線編號] = T.[路線編號]
+		AND D.[票種名稱] = T.[票種名稱]
+) D
+ORDER BY [路線IC代碼],[路線編號],[橫列名],[票種名稱]
+
+DROP TABLE #TargetTable
+DROP TABLE #TARGET_STORE
+DROP TABLE #Table_SubTotal
+'
+
+EXEC (@SQL_String_TARGET_STORE+@SQL_String)

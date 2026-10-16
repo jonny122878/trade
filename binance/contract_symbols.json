@@ -1,0 +1,1808 @@
+{
+  "source": "https://fapi.binance.com/fapi/v1/exchangeInfo",
+  "spot_source": "https://api.binance.com/api/v3/exchangeInfo",
+  "server_time_utc": "2026-10-15T07:20:21.301000+00:00",
+  "spot_server_time_utc": "2026-10-15T07:43:17.734000+00:00",
+  "filters": {
+    "quoteAsset": "USDT",
+    "status": "TRADING",
+    "underlyingType": "COIN",
+    "contractType": "PERPETUAL",
+    "requires_matching_spot_symbol": true,
+    "spot_quoteAsset": "USDT",
+    "spot_status": "TRADING"
+  },
+  "matching_spot_pair_count": 511,
+  "contract_count": 357,
+  "unique_base_asset_count": 357,
+  "contract_types": [
+    "PERPETUAL"
+  ],
+  "contracts": [
+    {
+      "symbol": "0GUSDT",
+      "baseAsset": "0G",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "1000CATUSDT",
+      "baseAsset": "1000CAT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "1000CHEEMSUSDT",
+      "baseAsset": "1000CHEEMS",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "1000SATSUSDT",
+      "baseAsset": "1000SATS",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "1INCHUSDT",
+      "baseAsset": "1INCH",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "1MBABYDOGEUSDT",
+      "baseAsset": "1MBABYDOGE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "2ZUSDT",
+      "baseAsset": "2Z",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "baseAsset": "AAVE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ACEUSDT",
+      "baseAsset": "ACE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ACHUSDT",
+      "baseAsset": "ACH",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ACTUSDT",
+      "baseAsset": "ACT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "baseAsset": "ADA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AEROUSDT",
+      "baseAsset": "AERO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AEVOUSDT",
+      "baseAsset": "AEVO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AGLDUSDT",
+      "baseAsset": "AGLD",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AIGENSYNUSDT",
+      "baseAsset": "AIGENSYN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AIXBTUSDT",
+      "baseAsset": "AIXBT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ALGOUSDT",
+      "baseAsset": "ALGO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ALICEUSDT",
+      "baseAsset": "ALICE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ALLOUSDT",
+      "baseAsset": "ALLO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ALPINEUSDT",
+      "baseAsset": "ALPINE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ALTUSDT",
+      "baseAsset": "ALT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ANIMEUSDT",
+      "baseAsset": "ANIME",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ANKRUSDT",
+      "baseAsset": "ANKR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "APEUSDT",
+      "baseAsset": "APE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "API3USDT",
+      "baseAsset": "API3",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "APTUSDT",
+      "baseAsset": "APT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ARBUSDT",
+      "baseAsset": "ARB",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ARKMUSDT",
+      "baseAsset": "ARKM",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ARKUSDT",
+      "baseAsset": "ARK",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ARPAUSDT",
+      "baseAsset": "ARPA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ARUSDT",
+      "baseAsset": "AR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ASRUSDT",
+      "baseAsset": "ASR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ASTERUSDT",
+      "baseAsset": "ASTER",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ASTRUSDT",
+      "baseAsset": "ASTR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ATOMUSDT",
+      "baseAsset": "ATOM",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ATUSDT",
+      "baseAsset": "AT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AUCTIONUSDT",
+      "baseAsset": "AUCTION",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AUSDT",
+      "baseAsset": "A",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AVAUSDT",
+      "baseAsset": "AVA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "baseAsset": "AVAX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AVNTUSDT",
+      "baseAsset": "AVNT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AWEUSDT",
+      "baseAsset": "AWE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AXLUSDT",
+      "baseAsset": "AXL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "AXSUSDT",
+      "baseAsset": "AXS",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BABYUSDT",
+      "baseAsset": "BABY",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BANANAS31USDT",
+      "baseAsset": "BANANAS31",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BANANAUSDT",
+      "baseAsset": "BANANA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BANDUSDT",
+      "baseAsset": "BAND",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BANKUSDT",
+      "baseAsset": "BANK",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BARDUSDT",
+      "baseAsset": "BARD",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BATUSDT",
+      "baseAsset": "BAT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BBUSDT",
+      "baseAsset": "BB",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BCHUSDT",
+      "baseAsset": "BCH",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BEAMXUSDT",
+      "baseAsset": "BEAMX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BELUSDT",
+      "baseAsset": "BEL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BERAUSDT",
+      "baseAsset": "BERA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BICOUSDT",
+      "baseAsset": "BICO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BIGTIMEUSDT",
+      "baseAsset": "BIGTIME",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BIOUSDT",
+      "baseAsset": "BIO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BLURUSDT",
+      "baseAsset": "BLUR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BMTUSDT",
+      "baseAsset": "BMT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "baseAsset": "BNB",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BNTUSDT",
+      "baseAsset": "BNT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BOMEUSDT",
+      "baseAsset": "BOME",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "baseAsset": "BREV",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BROCCOLI714USDT",
+      "baseAsset": "BROCCOLI714",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "baseAsset": "BTC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "C98USDT",
+      "baseAsset": "C98",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CAKEUSDT",
+      "baseAsset": "CAKE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CATIUSDT",
+      "baseAsset": "CATI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CELOUSDT",
+      "baseAsset": "CELO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CELRUSDT",
+      "baseAsset": "CELR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CETUSUSDT",
+      "baseAsset": "CETUS",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CFGUSDT",
+      "baseAsset": "CFG",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CFXUSDT",
+      "baseAsset": "CFX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CGPTUSDT",
+      "baseAsset": "CGPT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CHIPUSDT",
+      "baseAsset": "CHIP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CHRUSDT",
+      "baseAsset": "CHR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CHZUSDT",
+      "baseAsset": "CHZ",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CKBUSDT",
+      "baseAsset": "CKB",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "COMPUSDT",
+      "baseAsset": "COMP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "COOKIEUSDT",
+      "baseAsset": "COOKIE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "COTIUSDT",
+      "baseAsset": "COTI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "COWUSDT",
+      "baseAsset": "COW",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CRVUSDT",
+      "baseAsset": "CRV",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CTKUSDT",
+      "baseAsset": "CTK",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CTSIUSDT",
+      "baseAsset": "CTSI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CUSDT",
+      "baseAsset": "C",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CVCUSDT",
+      "baseAsset": "CVC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CVXUSDT",
+      "baseAsset": "CVX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "baseAsset": "CYBER",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "DASHUSDT",
+      "baseAsset": "DASH",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "DEXEUSDT",
+      "baseAsset": "DEXE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "DIAUSDT",
+      "baseAsset": "DIA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "baseAsset": "DOGE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "DOGSUSDT",
+      "baseAsset": "DOGS",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "DOLOUSDT",
+      "baseAsset": "DOLO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "baseAsset": "DOT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "DUSKUSDT",
+      "baseAsset": "DUSK",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "DYDXUSDT",
+      "baseAsset": "DYDX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "DYMUSDT",
+      "baseAsset": "DYM",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "EDENUSDT",
+      "baseAsset": "EDEN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "EDUUSDT",
+      "baseAsset": "EDU",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "EGLDUSDT",
+      "baseAsset": "EGLD",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "EIGENUSDT",
+      "baseAsset": "EIGEN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ENAUSDT",
+      "baseAsset": "ENA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ENJUSDT",
+      "baseAsset": "ENJ",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "baseAsset": "ENSO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ENSUSDT",
+      "baseAsset": "ENS",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "EPICUSDT",
+      "baseAsset": "EPIC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ERAUSDT",
+      "baseAsset": "ERA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ESPUSDT",
+      "baseAsset": "ESP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ETCUSDT",
+      "baseAsset": "ETC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ETHFIUSDT",
+      "baseAsset": "ETHFI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "baseAsset": "ETH",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "EULUSDT",
+      "baseAsset": "EUL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "FETUSDT",
+      "baseAsset": "FET",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "FFUSDT",
+      "baseAsset": "FF",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "FIDAUSDT",
+      "baseAsset": "FIDA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "FILUSDT",
+      "baseAsset": "FIL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "FLOWUSDT",
+      "baseAsset": "FLOW",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "FLUXUSDT",
+      "baseAsset": "FLUX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "FOGOUSDT",
+      "baseAsset": "FOGO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "FORMUSDT",
+      "baseAsset": "FORM",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "FRAXUSDT",
+      "baseAsset": "FRAX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "FUSDT",
+      "baseAsset": "F",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "GALAUSDT",
+      "baseAsset": "GALA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "GASUSDT",
+      "baseAsset": "GAS",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "GENIUSUSDT",
+      "baseAsset": "GENIUS",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "GIGGLEUSDT",
+      "baseAsset": "GIGGLE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "GLMUSDT",
+      "baseAsset": "GLM",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "GMTUSDT",
+      "baseAsset": "GMT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "GMXUSDT",
+      "baseAsset": "GMX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "GPSUSDT",
+      "baseAsset": "GPS",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "GRAMUSDT",
+      "baseAsset": "GRAM",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "GRTUSDT",
+      "baseAsset": "GRT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "GTCUSDT",
+      "baseAsset": "GTC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "GUNUSDT",
+      "baseAsset": "GUN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "GUSDT",
+      "baseAsset": "G",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "HAEDALUSDT",
+      "baseAsset": "HAEDAL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "HBARUSDT",
+      "baseAsset": "HBAR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "HEIUSDT",
+      "baseAsset": "HEI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "HEMIUSDT",
+      "baseAsset": "HEMI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "HIVEUSDT",
+      "baseAsset": "HIVE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "HMSTRUSDT",
+      "baseAsset": "HMSTR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "HOLOUSDT",
+      "baseAsset": "HOLO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "HOMEUSDT",
+      "baseAsset": "HOME",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "HOTUSDT",
+      "baseAsset": "HOT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "baseAsset": "HUMA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "HYPERUSDT",
+      "baseAsset": "HYPER",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "baseAsset": "HYPE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ICPUSDT",
+      "baseAsset": "ICP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "IDUSDT",
+      "baseAsset": "ID",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ILVUSDT",
+      "baseAsset": "ILV",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "IMXUSDT",
+      "baseAsset": "IMX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "INITUSDT",
+      "baseAsset": "INIT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "INJUSDT",
+      "baseAsset": "INJ",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "IOSTUSDT",
+      "baseAsset": "IOST",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "IOTAUSDT",
+      "baseAsset": "IOTA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "IOTXUSDT",
+      "baseAsset": "IOTX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "IOUSDT",
+      "baseAsset": "IO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "JASMYUSDT",
+      "baseAsset": "JASMY",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "JOEUSDT",
+      "baseAsset": "JOE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "JSTUSDT",
+      "baseAsset": "JST",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "JTOUSDT",
+      "baseAsset": "JTO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "JUPUSDT",
+      "baseAsset": "JUP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "KAIAUSDT",
+      "baseAsset": "KAIA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "KAITOUSDT",
+      "baseAsset": "KAITO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "KATUSDT",
+      "baseAsset": "KAT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "KAVAUSDT",
+      "baseAsset": "KAVA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "KERNELUSDT",
+      "baseAsset": "KERNEL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "KITEUSDT",
+      "baseAsset": "KITE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "KMNOUSDT",
+      "baseAsset": "KMNO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "KNCUSDT",
+      "baseAsset": "KNC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "KSMUSDT",
+      "baseAsset": "KSM",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "LAUSDT",
+      "baseAsset": "LA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "LAYERUSDT",
+      "baseAsset": "LAYER",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "LDOUSDT",
+      "baseAsset": "LDO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "LINEAUSDT",
+      "baseAsset": "LINEA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "LINKUSDT",
+      "baseAsset": "LINK",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "LISTAUSDT",
+      "baseAsset": "LISTA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "LPTUSDT",
+      "baseAsset": "LPT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "LQTYUSDT",
+      "baseAsset": "LQTY",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "LSKUSDT",
+      "baseAsset": "LSK",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "LTCUSDT",
+      "baseAsset": "LTC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "LUMIAUSDT",
+      "baseAsset": "LUMIA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MAGICUSDT",
+      "baseAsset": "MAGIC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MANAUSDT",
+      "baseAsset": "MANA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MANTAUSDT",
+      "baseAsset": "MANTA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MANTRAUSDT",
+      "baseAsset": "MANTRA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MARSCOINUSDT",
+      "baseAsset": "MARSCOIN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MASKUSDT",
+      "baseAsset": "MASK",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MAVUSDT",
+      "baseAsset": "MAV",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MEGAUSDT",
+      "baseAsset": "MEGA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MEMEUSDT",
+      "baseAsset": "MEME",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "METISUSDT",
+      "baseAsset": "METIS",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "METUSDT",
+      "baseAsset": "MET",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MEUSDT",
+      "baseAsset": "ME",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MINAUSDT",
+      "baseAsset": "MINA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MIRAUSDT",
+      "baseAsset": "MIRA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MITOUSDT",
+      "baseAsset": "MITO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "baseAsset": "MMT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MORPHOUSDT",
+      "baseAsset": "MORPHO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MOVEUSDT",
+      "baseAsset": "MOVE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MOVRUSDT",
+      "baseAsset": "MOVR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MTLUSDT",
+      "baseAsset": "MTL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "MUBARAKUSDT",
+      "baseAsset": "MUBARAK",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "NEARUSDT",
+      "baseAsset": "NEAR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "NEIROUSDT",
+      "baseAsset": "NEIRO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "NEOUSDT",
+      "baseAsset": "NEO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "NEWTUSDT",
+      "baseAsset": "NEWT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "NIGHTUSDT",
+      "baseAsset": "NIGHT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "NILUSDT",
+      "baseAsset": "NIL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "NMRUSDT",
+      "baseAsset": "NMR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "NOMUSDT",
+      "baseAsset": "NOM",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "NOTUSDT",
+      "baseAsset": "NOT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "NXPCUSDT",
+      "baseAsset": "NXPC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "OGNUSDT",
+      "baseAsset": "OGN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "OGUSDT",
+      "baseAsset": "OG",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ONDOUSDT",
+      "baseAsset": "ONDO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ONEUSDT",
+      "baseAsset": "ONE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ONGUSDT",
+      "baseAsset": "ONG",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ONTUSDT",
+      "baseAsset": "ONT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "OPENUSDT",
+      "baseAsset": "OPEN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "OPGUSDT",
+      "baseAsset": "OPG",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "OPNUSDT",
+      "baseAsset": "OPN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "OPUSDT",
+      "baseAsset": "OP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ORCAUSDT",
+      "baseAsset": "ORCA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ORDIUSDT",
+      "baseAsset": "ORDI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PARTIUSDT",
+      "baseAsset": "PARTI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PAXGUSDT",
+      "baseAsset": "PAXG",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PENDLEUSDT",
+      "baseAsset": "PENDLE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PENGUUSDT",
+      "baseAsset": "PENGU",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PEOPLEUSDT",
+      "baseAsset": "PEOPLE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PHAUSDT",
+      "baseAsset": "PHA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PIXELUSDT",
+      "baseAsset": "PIXEL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PLUMEUSDT",
+      "baseAsset": "PLUME",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PNUTUSDT",
+      "baseAsset": "PNUT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "POLUSDT",
+      "baseAsset": "POL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "POLYXUSDT",
+      "baseAsset": "POLYX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PORTALUSDT",
+      "baseAsset": "PORTAL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "POWRUSDT",
+      "baseAsset": "POWR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PROMUSDT",
+      "baseAsset": "PROM",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PROVEUSDT",
+      "baseAsset": "PROVE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PUMPUSDT",
+      "baseAsset": "PUMP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PUNDIXUSDT",
+      "baseAsset": "PUNDIX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "PYTHUSDT",
+      "baseAsset": "PYTH",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "QNTUSDT",
+      "baseAsset": "QNT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "QTUMUSDT",
+      "baseAsset": "QTUM",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "RAREUSDT",
+      "baseAsset": "RARE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "REDUSDT",
+      "baseAsset": "RED",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "RENDERUSDT",
+      "baseAsset": "RENDER",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "RESOLVUSDT",
+      "baseAsset": "RESOLV",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "REUSDT",
+      "baseAsset": "RE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "REZUSDT",
+      "baseAsset": "REZ",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "RIFUSDT",
+      "baseAsset": "RIF",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "RLCUSDT",
+      "baseAsset": "RLC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ROBOUSDT",
+      "baseAsset": "ROBO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "RONINUSDT",
+      "baseAsset": "RONIN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ROSEUSDT",
+      "baseAsset": "ROSE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "RPLUSDT",
+      "baseAsset": "RPL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "RSRUSDT",
+      "baseAsset": "RSR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "baseAsset": "RUNE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "RVNUSDT",
+      "baseAsset": "RVN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SAGAUSDT",
+      "baseAsset": "SAGA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SAHARAUSDT",
+      "baseAsset": "SAHARA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SANDUSDT",
+      "baseAsset": "SAND",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SANTOSUSDT",
+      "baseAsset": "SANTOS",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SAPIENUSDT",
+      "baseAsset": "SAPIEN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SCRUSDT",
+      "baseAsset": "SCR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SEIUSDT",
+      "baseAsset": "SEI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SENTUSDT",
+      "baseAsset": "SENT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SFPUSDT",
+      "baseAsset": "SFP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SHELLUSDT",
+      "baseAsset": "SHELL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SIGNUSDT",
+      "baseAsset": "SIGN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SKLUSDT",
+      "baseAsset": "SKL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SKYUSDT",
+      "baseAsset": "SKY",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SLPUSDT",
+      "baseAsset": "SLP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SNXUSDT",
+      "baseAsset": "SNX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "baseAsset": "SOL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SOLVUSDT",
+      "baseAsset": "SOLV",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SOMIUSDT",
+      "baseAsset": "SOMI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "baseAsset": "SOPH",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SPELLUSDT",
+      "baseAsset": "SPELL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SPKUSDT",
+      "baseAsset": "SPK",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SSVUSDT",
+      "baseAsset": "SSV",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "STEEMUSDT",
+      "baseAsset": "STEEM",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "STOUSDT",
+      "baseAsset": "STO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "STRKUSDT",
+      "baseAsset": "STRK",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "STXUSDT",
+      "baseAsset": "STX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SUIUSDT",
+      "baseAsset": "SUI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SUNUSDT",
+      "baseAsset": "SUN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SUPERUSDT",
+      "baseAsset": "SUPER",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SUSDT",
+      "baseAsset": "S",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SUSHIUSDT",
+      "baseAsset": "SUSHI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SXTUSDT",
+      "baseAsset": "SXT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SYNUSDT",
+      "baseAsset": "SYN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "SYRUPUSDT",
+      "baseAsset": "SYRUP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TAOUSDT",
+      "baseAsset": "TAO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "THETAUSDT",
+      "baseAsset": "THETA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "THEUSDT",
+      "baseAsset": "THE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TIAUSDT",
+      "baseAsset": "TIA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TLMUSDT",
+      "baseAsset": "TLM",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TNSRUSDT",
+      "baseAsset": "TNSR",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TOWNSUSDT",
+      "baseAsset": "TOWNS",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TRBUSDT",
+      "baseAsset": "TRB",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TREEUSDT",
+      "baseAsset": "TREE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TRUMPUSDT",
+      "baseAsset": "TRUMP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TRXUSDT",
+      "baseAsset": "TRX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TSTUSDT",
+      "baseAsset": "TST",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TURBOUSDT",
+      "baseAsset": "TURBO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TURTLEUSDT",
+      "baseAsset": "TURTLE",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TUSDT",
+      "baseAsset": "T",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TUTUSDT",
+      "baseAsset": "TUT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "TWTUSDT",
+      "baseAsset": "TWT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "UMAUSDT",
+      "baseAsset": "UMA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "UNIUSDT",
+      "baseAsset": "UNI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "USDCUSDT",
+      "baseAsset": "USDC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "USTCUSDT",
+      "baseAsset": "USTC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "USUALUSDT",
+      "baseAsset": "USUAL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "VANAUSDT",
+      "baseAsset": "VANA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "VELODROMEUSDT",
+      "baseAsset": "VELODROME",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "VETUSDT",
+      "baseAsset": "VET",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "VIRTUALUSDT",
+      "baseAsset": "VIRTUAL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "VTHOUSDT",
+      "baseAsset": "VTHO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "WALUSDT",
+      "baseAsset": "WAL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "WAXPUSDT",
+      "baseAsset": "WAXP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "WCTUSDT",
+      "baseAsset": "WCT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "WIFUSDT",
+      "baseAsset": "WIF",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "WLDUSDT",
+      "baseAsset": "WLD",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "WLFIUSDT",
+      "baseAsset": "WLFI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "WOOUSDT",
+      "baseAsset": "WOO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "WUSDT",
+      "baseAsset": "W",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "XAIUSDT",
+      "baseAsset": "XAI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "baseAsset": "XAUT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "XLMUSDT",
+      "baseAsset": "XLM",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "XPLUSDT",
+      "baseAsset": "XPL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "baseAsset": "XRP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "XTZUSDT",
+      "baseAsset": "XTZ",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "XVGUSDT",
+      "baseAsset": "XVG",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "XVSUSDT",
+      "baseAsset": "XVS",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "YBUSDT",
+      "baseAsset": "YB",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "YFIUSDT",
+      "baseAsset": "YFI",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "YGGUSDT",
+      "baseAsset": "YGG",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ZAMAUSDT",
+      "baseAsset": "ZAMA",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ZBTUSDT",
+      "baseAsset": "ZBT",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ZECUSDT",
+      "baseAsset": "ZEC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ZENUSDT",
+      "baseAsset": "ZEN",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ZILUSDT",
+      "baseAsset": "ZIL",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ZKCUSDT",
+      "baseAsset": "ZKC",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ZKPUSDT",
+      "baseAsset": "ZKP",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ZKUSDT",
+      "baseAsset": "ZK",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ZROUSDT",
+      "baseAsset": "ZRO",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "ZRXUSDT",
+      "baseAsset": "ZRX",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "币安人生USDT",
+      "baseAsset": "币安人生",
+      "contractType": "PERPETUAL"
+    },
+    {
+      "symbol": "牛来USDT",
+      "baseAsset": "牛来",
+      "contractType": "PERPETUAL"
+    }
+  ]
+}

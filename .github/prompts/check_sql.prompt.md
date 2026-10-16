@@ -1,0 +1,4 @@
+ICP_TM_SETTLE_DATA_D_VIEW 為檢視表其來源基底為 RPT_GRANT_ICP_TrafficDetail
+可參考 ICP_TM_SETTLE_DATA_D_VIEW_schema
+幫我比較 @SQL_String 表格變數上，EXL_0301_1 和 EXL_0301_1_city 投射欄位 [刷卡量(次)] 有無差異
+比較的依據是將投射來源邏輯做比較，條列式列出相同和相異性
